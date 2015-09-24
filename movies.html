@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+  Author: Shreyas Anand
+  URL: http://omega.uta.edu/~sxa1001/shreyasanand/movies/movies.html
+-->
+<html lang="en">
+  <head>
+    <title>Movie Database</title>
+    <h1>Movie Database</h1>
+    <meta charset="utf-8"/>
+    <script type="text/javascript" src="movies.js"></script>
+	<link rel="stylesheet" type="text/css" href="movies.css">
+  </head>
+  <body>
+    <form>
+       <label>Movie name: 
+		   <input placeholder="Enter part/entire movie name.." type="text" id="form-input" onkeypress="return searchKeyPress(event);"/>
+	   </label>
+       <input type="button" id="btnSearch" onclick="sendRequestToSearchMovie();" value="Search"/>
+    </form>
+    <div id="output" class="output"></div>
+    <div id="cast" class="cast"></div>
+    <div id="movieinfo" class="movieInfo"></div>
+  </body>
+</html>
