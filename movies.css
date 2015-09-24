@@ -1,0 +1,76 @@
+/** movies.css **/
+
+h1 {
+	text-align: left;
+	color : white; 
+	font-family:Papyrus;
+}
+
+body {
+	background-color:#484848;
+}
+
+label {
+	font-family:Palatino Linotype;
+	color:white;
+}
+
+input {
+	border-radius:5px;
+	font-family:Palatino Linotype;
+}
+
+#form-input {
+	width:400px;
+}
+
+img {
+	width: 200px !important;
+    height: 300px !important; 
+}
+
+.output {
+	display: block;
+	font-family:Palatino Linotype;
+	font-size:smaller; 
+	padding:10px 10px; 
+	border:2px solid; 
+	border-style:inset; 
+	margin-top:40px; 
+	width:40%; 
+	border-radius:10px;
+	float:left; 
+	position:relative; 
+	background-color:#F5DA81;
+}
+.movieLink {
+    text-decoration: none;
+}
+
+.cast {
+	display: block;
+	margin-top: 100px;
+	font-family:Palatino Linotype;
+	font-size:smaller; 
+	z-index:1000; 
+	float:right; 
+	position:relative; 
+	margin-left:-300px; 
+	width:150px; 
+	height:20%;
+}
+
+.movieInfo {
+	display: block;
+	font-family:Palatino Linotype;
+	font-size:smaller; 
+	padding:10px 10px; 
+	margin-top:40px; 
+	border:2px solid; 
+	border-style:inset; 
+	border-radius:10px; 
+	float:right; 
+	position:relative; 
+	width:50%; 
+	background-color:#F5DA81;
+}
