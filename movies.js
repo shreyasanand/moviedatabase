@@ -14,8 +14,12 @@ function sendXhr(requestURI, responseHandler) {
 and calls the sendXhr method */
 function sendRequestToSearchMovie() {
     var query = encodeURI(document.getElementById("form-input").value);
-    var requestURI = "proxy.php?method=/3/search/movie&query=" + query;
-    sendXhr(requestURI, processResponseToMovieSearchResults);
+    if(query!=""){
+		var requestURI = "proxy.php?method=/3/search/movie&query=" + query;
+		sendXhr(requestURI, processResponseToMovieSearchResults);
+	} else {
+		document.getElementById("output").innerHTML = "Did you forget something?";
+	}
 }
 
 /* Function which processes and displays the results of the movie search */
