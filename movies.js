@@ -103,7 +103,7 @@ function processResponseToMovieInfo() {
             movieGenres[idx] = json.genres[idx].name;
         }
         var movieOverview = json["overview"];
-        html = "<img src='http://image.tmdb.org/t/p/w185" + moviePosterURL + "' alt='No image'><li>Title: " + 
+        html = "<img id='poster' src='http://image.tmdb.org/t/p/w185" + moviePosterURL + "' alt='No image'><li>Title: " + 
 		movieTitle + "</li><li>Genres: " + movieGenres + "</li><li>Overview: " + movieOverview + "</li>";
     } else {
 		html = "Server error! please try again later";

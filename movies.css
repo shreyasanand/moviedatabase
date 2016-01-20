@@ -24,7 +24,7 @@ input {
 	width:400px;
 }
 
-img {
+#poster {
 	width: 200px !important;
     height: 300px !important; 
 }
